@@ -210,9 +210,11 @@ h3 { font-size: 1rem; color: var(--primary); margin-top: 10px; }
     object-fit: cover;
     z-index: -2;
     opacity: 0.3;
+    pointer-events: none; 
 }
 
 section, .hero {
     background: transparent !important;
     position: relative;
 }
+
