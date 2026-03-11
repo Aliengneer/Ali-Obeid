@@ -223,12 +223,14 @@ section, .hero {
     left: 0;
     width: 100%;
     height: 140px;
-    background-image: url('ramadan.png.jpg');
+    background-image: url('ramadan.png');
     background-size: contain;
     background-repeat: repeat-x;
     z-index: 9999;
     pointer-events: none;
     filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.6));
+} 0.6));
 }
+
 
 
