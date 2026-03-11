@@ -222,24 +222,11 @@ section, .hero {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 30px;
+    height: 140px;
+    background-image: url('ramadan.png');
+    background-size: contain;
+    background-repeat: repeat-x;
     z-index: 9999;
     pointer-events: none;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
+    filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.6));
 }
-
-.ramadan-banner span {
-    animation: ramadan-glow 2s infinite alternate;
-}
-
-@keyframes ramadan-glow {
-    from { text-shadow: 0 0 5px #fff; transform: translateY(0); }
-    to { text-shadow: 0 0 20px #ffd700; transform: translateY(5px); }
-}
-
-
