@@ -222,11 +222,24 @@ section, .hero {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
-    background-image: url('https://png.pngtree.com/png-clipart/20220910/ourmid/pngtree-decorative-ramadan-lantern-moon-border-hanging-png-image_6164283.png');
-    background-size: contain;
-    background-repeat: repeat-x;
-    z-index: 9999; /* عشان يطلع فوق الفيديو */
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    z-index: 9999;
     pointer-events: none;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
 }
+
+.ramadan-banner span {
+    animation: ramadan-glow 2s infinite alternate;
+}
+
+@keyframes ramadan-glow {
+    from { text-shadow: 0 0 5px #fff; transform: translateY(0); }
+    to { text-shadow: 0 0 20px #ffd700; transform: translateY(5px); }
+}
+
 
