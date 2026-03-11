@@ -222,11 +222,11 @@ section, .hero {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: 100px;
     background-image: url('https://png.pngtree.com/png-clipart/20220910/ourmid/pngtree-decorative-ramadan-lantern-moon-border-hanging-png-image_6164283.png');
     background-size: contain;
     background-repeat: repeat-x;
-    z-index: 1000;
+    z-index: 9999; /* عشان يطلع فوق الفيديو */
     pointer-events: none;
 }
 
