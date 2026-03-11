@@ -18,7 +18,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/* الخلفية المبهجة */
+
 .blob-1, .blob-2 {
     position: absolute;
     width: 400px;
@@ -30,7 +30,7 @@ body {
 .blob-1 { background: var(--primary); top: -10%; left: -10%; }
 .blob-2 { background: var(--secondary); bottom: -10%; right: -10%; }
 
-/* قسم الهيرو (البروفايل اللي كان عاجبك) */
+
 .hero {
     height: 100vh;
     display: flex;
@@ -79,7 +79,7 @@ h1 { font-size: 4rem; line-height: 1; text-align: center; }
 .highlight { color: var(--primary); display: block; text-shadow: 0 0 20px var(--primary); }
 .job-title { font-size: 1.1rem; letter-spacing: 8px; color: #ccc; margin-top: 15px; text-align: center; }
 
-/* المربع بتاع "مين هو علي؟" */
+
 .about {
     padding: 80px 20px;
     display: flex;
@@ -89,7 +89,7 @@ h1 { font-size: 4rem; line-height: 1; text-align: center; }
 .about-card-square {
     background: rgba(255, 255, 255, 0.05);
     padding: 50px;
-    border-radius: 20px; /* مربع بحواف ناعمة */
+    border-radius: 20px; 
     max-width: 600px;
     text-align: center;
     border: 2px solid var(--primary);
@@ -99,7 +99,7 @@ h1 { font-size: 4rem; line-height: 1; text-align: center; }
 .about-card-square h2 { color: var(--secondary); margin-bottom: 20px; font-size: 2.5rem; }
 .about-card-square p { font-size: 1.2rem; line-height: 1.8; }
 
-/* قسم المشاريع */
+
 .portfolio { padding: 60px 10px; text-align: center; }
 .section-title { font-size: 3rem; color: var(--secondary); margin-bottom: 40px; }
 
@@ -110,7 +110,7 @@ h1 { font-size: 4rem; line-height: 1; text-align: center; }
     margin: 0 auto;
 }
 
-/* 4 فيديوهات للكمبيوتر و 2 للموبايل */
+
 @media (min-width: 1024px) { .projects-grid { grid-template-columns: repeat(4, 1fr); } }
 @media (max-width: 1023px) { .projects-grid { grid-template-columns: repeat(2, 1fr); } }
 
@@ -131,7 +131,7 @@ h1 { font-size: 4rem; line-height: 1; text-align: center; }
 iframe { width: 100%; aspect-ratio: 16/9; }
 h3 { font-size: 1rem; color: var(--primary); margin-top: 10px; }
 
-/* زرار السكرول */
+
 .scroll-btn {
     display: block;
     width: fit-content;
@@ -144,7 +144,7 @@ h3 { font-size: 1rem; color: var(--primary); margin-top: 10px; }
     font-weight: bold;
 }
 
-/* الأنيميشن الأصلي اللي كان عاجبك */
+
 @keyframes pulse {
     from { opacity: 0.4; transform: translate(-50%, -50%) scale(0.9); }
     to { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
@@ -190,7 +190,7 @@ h3 { font-size: 1rem; color: var(--primary); margin-top: 10px; }
     box-shadow: 0 0 20px #25d366;
 }
 
-/* حركة بسيطة عشان يلمض ويشد الانتباه */
+
 @keyframes pulse-wa {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -230,4 +230,5 @@ section, .hero {
     pointer-events: none;
     filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.6));
 }
+
 
