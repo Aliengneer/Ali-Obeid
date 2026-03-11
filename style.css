@@ -217,4 +217,16 @@ section, .hero {
     background: transparent !important;
     position: relative;
 }
+.ramadan-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: url('https://png.pngtree.com/png-clipart/20220910/ourmid/pngtree-decorative-ramadan-lantern-moon-border-hanging-png-image_6164283.png');
+    background-size: contain;
+    background-repeat: repeat-x;
+    z-index: 1000;
+    pointer-events: none;
+}
 
