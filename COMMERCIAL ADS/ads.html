@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commercial Ads | Ali Obeid</title>
+    <title>YouTube Content | Ali Obeid</title>
     <style>
         body { background: #0a0118; color: white; font-family: sans-serif; text-align: center; padding: 50px 10px; }
         
-        h1 { color: #00f2ff; text-shadow: 0 0 15px #00f2ff; margin-bottom: 40px; font-size: 2.5rem; }
+        h1 { color: #ff0000; text-shadow: 0 0 15px rgba(255, 0, 0, 0.5); margin-bottom: 40px; font-size: 2.5rem; }
 
-        /* --- تقسيم الشبكة (4 للكمبيوتر و 2 للموبايل) --- */
-        .ads-grid { 
+        /* الشبكة: 4 كمبيوتر و 2 موبايل */
+        .yt-grid { 
             display: grid; 
             gap: 15px; 
             grid-template-columns: repeat(4, 1fr); 
@@ -18,64 +18,64 @@
             margin: 0 auto; 
         }
 
-        .ad-item { 
+        .yt-item { 
             background: rgba(255,255,255,0.05); 
             border-radius: 12px; 
             overflow: hidden; 
-            border: 1px solid rgba(0,242,255,0.2); 
+            border: 1px solid rgba(255,0,0,0.1); 
             transition: 0.3s; 
         }
-        .ad-item:hover { transform: translateY(-5px); border-color: #ff007f; box-shadow: 0 0 20px rgba(255, 0, 127, 0.2); }
+        .yt-item:hover { transform: translateY(-5px); border-color: #ff0000; box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2); }
 
         iframe { width: 100%; aspect-ratio: 16/9; border: none; display: block; }
 
-        .ad-info { padding: 10px; text-align: center; background: rgba(0,0,0,0.3); }
-        .ad-info h3 { margin: 0; font-size: 0.9rem; color: #fff; }
+        .yt-info { padding: 10px; text-align: center; background: rgba(0,0,0,0.4); }
+        .yt-info h3 { margin: 0; font-size: 0.85rem; color: #fff; font-weight: normal; }
 
-        /* --- تنسيق زرار العودة السفلي --- */
+        /* زرار العودة */
         .back-btn-wrapper { margin-top: 50px; padding-bottom: 30px; }
         .back-btn { 
             display: inline-block; 
-            color: #00f2ff; 
+            color: #ff0000; 
             text-decoration: none; 
-            border: 2px solid #00f2ff; 
+            border: 2px solid #ff0000; 
             padding: 12px 30px; 
             border-radius: 50px; 
             transition: 0.3s; 
             font-weight: bold;
         }
-        .back-btn:hover { background: #00f2ff; color: black; transform: scale(1.1); box-shadow: 0 0 20px #00f2ff; }
+        .back-btn:hover { background: #ff0000; color: white; transform: scale(1.1); box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); }
 
         @media (max-width: 768px) {
-            .ads-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+            .yt-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
             h1 { font-size: 1.8rem; }
         }
     </style>
 </head>
 <body>
-    <h1>COMMERCIAL ADS</h1>
+    <h1>YOUTUBE CONTENT</h1>
     
-    <div class="ads-grid">
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 1</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 2</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 3</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 4</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 5</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 6</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 7</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 8</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 9</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 10</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 11</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 12</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 13</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 14</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 15</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 16</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 17</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 18</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 19</h3></div></div>
-        <div class="ad-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="ad-info"><h3>مشروع 20</h3></div></div>
+    <div class="yt-grid">
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 1</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 2</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 3</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 4</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 5</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 6</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 7</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 8</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 9</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 10</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 11</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 12</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 13</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 14</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 15</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 16</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 17</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 18</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 19</h3></div></div>
+        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 20</h3></div></div>
     </div>
 
     <div class="back-btn-wrapper">
