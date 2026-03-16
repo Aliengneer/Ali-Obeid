@@ -238,6 +238,35 @@ h1 { font-size: 4rem; line-height: 1; }
 .wa-text { color: white; font-weight: bold; margin-left: 10px; font-size: 14px; }
 .whatsapp-btn img { width: 30px; }
 @keyframes pulse-wa { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+.project-card {
+    text-decoration: none; /* شيل الخط اللي تحت الكلام */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #150a26;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #00f2ff;
+    box-shadow: 0 10px 30px rgba(0, 242, 255, 0.2);
+}
+
+.folder-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    color: white;
+    margin: 0;
+    font-size: 1.2rem;
+}
 
 
 
