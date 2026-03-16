@@ -106,4 +106,4 @@ h1 {
 @keyframes floating { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 @keyframes float-box { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
 @keyframes morph { 0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; } 50% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; } }
-@keyframes pulse { from { opacity: 0.4; transform: translate(-50%, -50%) scale(0.9); } to { opacity: 1; transform: translate(-50%, -50%) scale(1.2); } } scale(0.9); } to { opacity: 1; transform: translate(-50%, -50%) scale(1.2); } }
+@keyframes pulse { from { opacity: 0.4; transform: translate(-50%, -50%) scale(0.9); } to { opacity: 1; transform: translate(-50%, -50%) scale(1.2); } }
