@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Content | Ali Obeid</title>
+    <title>Ads Content | Ali Obeid</title>
     <style>
         body { background: #0a0118; color: white; font-family: sans-serif; text-align: center; padding: 50px 10px; }
         
-        h1 { color: #ff0000; text-shadow: 0 0 15px rgba(255, 0, 0, 0.5); margin-bottom: 40px; font-size: 2.5rem; }
+        h1 { color: #ff7a00; text-shadow: 0 0 15px rgba(255, 122, 0, 0.6); margin-bottom: 40px; font-size: 2.5rem; }
 
-        /* الشبكة: 4 كمبيوتر و 2 موبايل */
         .yt-grid { 
             display: grid; 
             gap: 15px; 
@@ -22,29 +21,52 @@
             background: rgba(255,255,255,0.05); 
             border-radius: 12px; 
             overflow: hidden; 
-            border: 1px solid rgba(255,0,0,0.1); 
-            transition: 0.3s; 
+            border: 1px solid rgba(255,122,0,0.2); 
+            transition: 0.3s;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
         }
-        .yt-item:hover { transform: translateY(-5px); border-color: #ff0000; box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2); }
+
+        .yt-item:hover { 
+            transform: translateY(-5px); 
+            border-color: #ff7a00; 
+            box-shadow: 0 10px 20px rgba(255, 122, 0, 0.4); 
+        }
 
         iframe { width: 100%; aspect-ratio: 16/9; border: none; display: block; }
 
-        .yt-info { padding: 10px; text-align: center; background: rgba(0,0,0,0.4); }
+        .yt-info { padding: 10px; text-align: center; background: rgba(0,0,0,0.4); width:100%; }
         .yt-info h3 { margin: 0; font-size: 0.85rem; color: #fff; font-weight: normal; }
 
-        /* زرار العودة */
+        /* مربع قريباً */
+        .coming-soon{
+            font-size:20px;
+            font-weight:bold;
+            color:white;
+            text-shadow:0 0 12px #ff7a00;
+            padding:60px 0;
+        }
+
         .back-btn-wrapper { margin-top: 50px; padding-bottom: 30px; }
         .back-btn { 
             display: inline-block; 
-            color: #ff0000; 
+            color: #ff7a00; 
             text-decoration: none; 
-            border: 2px solid #ff0000; 
+            border: 2px solid #ff7a00; 
             padding: 12px 30px; 
             border-radius: 50px; 
             transition: 0.3s; 
             font-weight: bold;
         }
-        .back-btn:hover { background: #ff0000; color: white; transform: scale(1.1); box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); }
+
+        .back-btn:hover { 
+            background: #ff7a00; 
+            color: white; 
+            transform: scale(1.1); 
+            box-shadow: 0 0 20px rgba(255, 122, 0, 0.6); 
+        }
 
         @media (max-width: 768px) {
             .yt-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
@@ -52,34 +74,75 @@
         }
     </style>
 </head>
-<body>
-    <h1>YOUTUBE CONTENT</h1>
-    
-    <div class="yt-grid">
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 1</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 2</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 3</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 4</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 5</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 6</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 7</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 8</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 9</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 10</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 11</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 12</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 13</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 14</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 15</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 16</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 17</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 18</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 19</h3></div></div>
-        <div class="yt-item"><iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe><div class="yt-info"><h3>فيديو يوتيوب 20</h3></div></div>
-    </div>
 
-    <div class="back-btn-wrapper">
-        <a href="../index.html" class="back-btn">← العودة للرئيسية</a>
-    </div>
+<body>
+
+<h1>ADS CONTENT</h1>
+
+<div class="yt-grid">
+
+<!-- الفيديو الحقيقي -->
+<div class="yt-item">
+<iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" allowfullscreen></iframe>
+<div class="yt-info"><h3></h3></div>
+</div>
+
+<!-- باقي المشاريع -->
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+<div class="yt-item"><div class="coming-soon">قريبًا...</div></div>
+
+</div>
+
+<div class="back-btn-wrapper">
+<a href="../index.html" class="back-btn">← العودة للرئيسية</a>
+</div>
+<!-- زرار تواصل معي ثابت مع واتساب -->
+<a href="https://wa.me/201040901229" target="_blank" class="contact-btn">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+       alt="WhatsApp" style="width:20px; height:20px; vertical-align:middle; margin-right:8px;">
+  تواصل معي
+</a>
+
+<style>
+.contact-btn {
+    position: fixed; /* يثبت الزرار على الشاشة */
+    top: 20px;       /* المسافة من فوق */
+    right: 20px;     /* المسافة من اليمين */
+    background: linear-gradient(45deg, #25D366, #128C7E); /* ألوان واتساب */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 15px #25D366, 0 0 30px #128C7E; /* توهج */
+    transition: 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 9999; /* يظهر فوق كل العناصر */
+    display: flex;
+    align-items: center;
+}
+
+/* حركة عند المرور */
+.contact-btn:hover {
+    transform: scale(1.1) rotate(-2deg); /* أنيميشن صغيرة */
+    box-shadow: 0 0 20px #25D366, 0 0 40px #128C7E; /* توهج أقوى */
+}
+</style>
 </body>
 </html>
