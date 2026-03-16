@@ -18,6 +18,35 @@
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
 </head>
 <body>
+    <!-- زرار تواصل معي ثابت فوق اليمين -->
+<a href="#" class="contact-fixed">
+    <i class="fab fa-whatsapp" style="margin-right:8px;"></i> تواصل معي
+</a>
+
+<style>
+.contact-fixed {
+    position: fixed;       /* يثبت الزرار على الشاشة */
+    top: 20px;             /* المسافة من فوق */
+    right: 20px;           /* المسافة من اليمين */
+    background: linear-gradient(45deg, #25D366, #128C7E); /* ألوان واتساب */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 15px #25D366, 0 0 30px #128C7E; /* توهج */
+    z-index: 9999;         /* يظهر فوق كل العناصر */
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* حركة أنيميشن عند المرور */
+.contact-fixed:hover {
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 0 20px #25D366, 0 0 40px #128C7E; /* توهج أقوى */
+}
+</style>
 
     <header class="hero">
         <video autoplay muted loop playsinline class="hero-video">
@@ -39,18 +68,53 @@
     </header>
 
     <section class="showreel">
-        <div class="container">
-            <h2 class="section-title">SHOWREEL 2026</h2>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/YQi8QwmlZk0" frameborder="0" allowfullscreen></iframe>
-            </div>
+    <div class="container">
+        <h2 class="section-title">SHOWREEL 2026</h2>
+        <div class="video-container coming-soon-box">
+            <span class="coming-soon-text">قريبًا...</span>
         </div>
-    </section>
+    </div>
+</section>
+
+<style>
+.video-container.coming-soon-box {
+    width: 100%;
+    max-width: 900px;  /* حجم المربع */
+    height: 500px;     /* ارتفاع المربع */
+    margin: 0 auto;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0a0118; /* نفس خلفية الصفحة */
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.7); /* توهج أزرق */
+    animation: pulse 2s infinite alternate; /* أنيميشن تكبر وتصغر */
+    transition: 0.3s ease-in-out;
+    font-size: 3rem; /* حجم كلمة قريبًا */
+    font-weight: bold;
+    color: #00aaff; /* لون النص */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(0, 150, 255, 0.7);
+    }
+    100% {
+        transform: scale(1.05);
+        box-shadow: 0 0 35px rgba(0, 150, 255, 1);
+    }
+}
+
+.coming-soon-text {
+    text-shadow: 0 0 15px #00aaff, 0 0 30px #00aaff;
+}
+</style>
 
     <section id="about" class="about">
         <div class="container">
             <div class="about-card glowing-border animate-on-scroll">
-               <h2>نبذة عني </h2>
+                <h2>نبذة عني </h2>
                 <p> أنا علي عبيد، مونتير محترف متخصص في فيديوهات Shorts و Reels. أستخدم برامج مونتاج متقدمة مثل CapCut وAdobe Premiere Pro وDaVinci Resolve لصنع محتوى جذاب يلفت الانتباه ويزيد التفاعل. لدي خبرة 3 سنوات في تحويل اللقطات العادية إلى فيديوهات ديناميكية وملفتة، وأحرص دائمًا على مواكبة أحدث الصيحات في عالم الفيديوهات الرقمية. شغفي هو رواية القصص عبر الحركة والمؤثرات بطريقة مبتكرة تجعل كل فيديو تجربة مميزة للمشاهد.</p>
             </div>
         </div>
