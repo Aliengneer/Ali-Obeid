@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>My Reels</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .reels-grid { 
+            display: grid; gap: 20px; padding: 20px;
+            grid-template-columns: repeat(2, 1fr); /* تليفون: 2 */
+        }
+        @media (min-width: 900px) { 
+            .reels-grid { grid-template-columns: repeat(4, 1fr); } /* كمبيوتر: 4 */
+        }
+        .reel-box { 
+            background: #000; border: 2px solid var(--primary); border-radius: 15px; 
+            overflow: hidden; aspect-ratio: 9/16; 
+        }
+        .reel-box iframe { width: 100%; height: 100%; border: none; }
+        
+        .back-btn { 
+            display: inline-block; margin: 40px auto; padding: 15px 40px; 
+            border: 2px solid white; border-radius: 50px; color: white; 
+            text-decoration: none; transition: 0.3s; background: rgba(255,255,255,0.1);
+        }
+        .back-btn:hover { background: white; color: black; transform: scale(1.05); box-shadow: 0 0 20px white; }
+    </style>
+</head>
+<body style="text-align: center; padding-top: 50px;">
+    <h1 style="color: var(--primary); margin-bottom: 30px;">VERTICAL REELS</h1>
+    <div class="reels-grid">
+        <div class="reel-box"><iframe src="https://www.youtube.com/embed/y_YmACPqZoU"></iframe></div>
+        <div class="reel-box"><iframe src="https://www.youtube.com/embed/y_YmACPqZoU"></iframe></div>
+        <div class="reel-box"><iframe src="https://www.youtube.com/embed/y_YmACPqZoU"></iframe></div>
+        <div class="reel-box"><iframe src="https://www.youtube.com/embed/y_YmACPqZoU"></iframe></div>
+    </div>
+    <a href="../index.html" class="back-btn">⬅ العودة للرئيسية</a>
+</body>
+</html>
