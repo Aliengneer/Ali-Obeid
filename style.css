@@ -18,7 +18,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/* فيديو الخلفية */
+
 #bg-video {
     position: fixed;
     top: 0;
@@ -36,7 +36,7 @@ section, .hero {
     position: relative;
 }
 
-/* الهيرو وتوسيط العناصر */
+
 .hero {
     height: 100vh;
     display: flex;
@@ -92,7 +92,7 @@ h1 { font-size: 4rem; line-height: 1; }
 .highlight { color: var(--primary); display: block; text-shadow: 0 0 20px var(--primary); }
 .job-title { font-size: 1.1rem; letter-spacing: 8px; color: #ccc; margin-top: 15px; }
 
-/* زر تعرف علي - معدل بالأنيميشن والتوسيط */
+
 .scroll-btn {
     display: inline-block;
     margin: 30px auto 0;
@@ -112,7 +112,7 @@ h1 { font-size: 4rem; line-height: 1; }
     box-shadow: 0 0 20px var(--primary);
 }
 
-/* مربع الوصف - معدل بالأنيميشن */
+
 .about {
     padding: 80px 20px;
     display: flex;
@@ -127,48 +127,86 @@ h1 { font-size: 4rem; line-height: 1; }
     text-align: center;
     border: 2px solid var(--primary);
     box-shadow: 0 0 20px rgba(0, 242, 255, 0.1);
-    animation: float-box 6s infinite ease-in-out; /* إضافة أنيميشن الطفو للمربع */
+    animation: float-box 6s infinite ease-in-out; 
 }
 
 .about-card-square h2 { color: var(--secondary); margin-bottom: 20px; font-size: 2.5rem; }
 .about-card-square p { font-size: 1.2rem; line-height: 1.8; }
 
-/* قسم الأعمال والمجلدات */
-.portfolio { padding: 60px 10px; text-align: center; }
-.section-title { font-size: 3rem; color: var(--secondary); margin-bottom: 40px; }
+
+.portfolio {
+    padding: 60px 10px;
+    text-align: center;
+    position: relative; 
+    z-index: 10;
+}
 
 .projects-grid {
     display: grid;
     gap: 30px;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
+  
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
-
-@media (min-width: 1024px) { .projects-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 1023px) { .projects-grid { grid-template-columns: repeat(1, 1fr); } }
 
 .project-card {
-    background: rgba(21, 10, 38, 0.8);
-    border-radius: 15px;
-    overflow: hidden;
-    padding: 20px;
-    transition: 0.3s;
-    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(21, 10, 38, 0.6); 
+    border-radius: 20px;
+    padding: 40px 20px;
+    transition: 0.3s ease-in-out;
+    border: 1px solid rgba(255,255,255,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 .project-card:hover {
     transform: translateY(-10px) scale(1.02);
-    border: 1px solid var(--primary);
-    box-shadow: 0 10px 30px rgba(0, 242, 255, 0.3);
+    border-color: var(--primary); /* اللون الأزرق */
+    box-shadow: 0 10px 30px rgba(0, 242, 255, 0.2);
 }
 
-.icon-box { height: 60px; display: flex; justify-content: center; align-items: center; margin-bottom: 10px; }
-.logo-svg { width: 50px; height: 50px; }
-.yt-red { fill: #ff0000; }
-.ads-blue { fill: var(--primary); }
-.reels-pink { fill: var(--secondary); }
 
-/* أنيميشن */
+.icon-container {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+.logo-svg {
+    width: 60px; 
+    height: 60px;
+    transition: 0.3s;
+}
+
+
+.yt-color {
+    fill: #ff0000;
+    filter: drop-shadow(0 0 10px rgba(255,0,0,0.5));
+}
+
+.ads-color {
+    fill: var(--primary); 
+    filter: drop-shadow(0 0 10px rgba(0,242,255,0.5));
+}
+
+.reels-color {
+    fill: #e4405f; 
+    filter: drop-shadow(0 0 10px rgba(228,64,95,0.5));
+}
+
+.project-card h3 {
+    font-size: 1.1rem;
+    color: white;
+    margin-top: 10px;
+}
+
+
 @keyframes pulse {
     from { opacity: 0.4; transform: translate(-50%, -50%) scale(0.9); }
     to { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
@@ -190,7 +228,7 @@ h1 { font-size: 4rem; line-height: 1; }
     50% { box-shadow: 0 0 20px var(--primary); }
 }
 
-/* واتساب */
+
 .whatsapp-btn {
     position: fixed; bottom: 30px; right: 30px;
     background-color: #25d366; display: flex; align-items: center;
